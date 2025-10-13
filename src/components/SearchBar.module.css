@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: 1px solid #333;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.input:focus {
+    border-color: #8c43ff;
+    box-shadow: 0 0 10px #8c43ff;
+}
