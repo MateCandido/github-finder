@@ -1,16 +1,16 @@
 import styles from './SearchBar.module.css'
-import type { Dispatch, SetStateAction } from 'react';
+import type { Dispatch, SetStateAction } from 'react'
 
 interface SearchBarProps {
-    searchTerm: string;
-    setSearchTerm: Dispatch<SetStateAction<string>>;
-    onSearch: () => Promise<void>;
+    searchTerm: string
+    setSearchTerm: Dispatch<SetStateAction<string>>
+    onSearch: () => Promise<void>
   }
 
 export const SearchBar = ({ searchTerm, setSearchTerm, onSearch }: SearchBarProps) => {
     const handleKeyDown = (event: React.KeyboardEvent) => {
       if (event.key === 'Enter') {
-        onSearch();
+        onSearch()
       }
     }
   return (
